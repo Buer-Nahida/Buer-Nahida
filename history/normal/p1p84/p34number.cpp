@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char *argv[]) {
-  int argc1 = 1, argc2 = 0, argc3 = 0, count = 0;
+int main() {
+  int argc, argc1 = 1, argc2 = 0, argc3 = 0, count = 0;
 
   do {
     argc = (argc1 * 100) + (argc2 * 10) + (argc3);
