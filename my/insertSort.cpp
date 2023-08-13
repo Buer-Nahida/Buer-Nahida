@@ -1,8 +1,8 @@
 #include "insertSort.h"
 
-void insertSort(int *Arr, bool AscendingSort, int ArrWidth) {
+void insertSort(int *Arr, bool AscendingSort, int ArrLenger) {
   int x, j;
-  for (int i = 0; i < ArrWidth; i++) {
+  for (int i = 0; i < ArrLenger; i++) {
     x = Arr[i];
     j = i - 1;
     while (j >= 0) {

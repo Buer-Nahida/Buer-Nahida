@@ -1,5 +1,4 @@
 #include "my/star.h"
-#include <memory>
 
 class Test {
 public:
