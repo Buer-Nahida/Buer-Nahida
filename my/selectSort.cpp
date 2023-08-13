@@ -1,6 +1,6 @@
 #include "selectSort.h"
 
-void selectSort(int *ArrName, bool AscendingSort, int ArrWidth) {
+void selectSort(int *ArrName, bool AscendingSort, int ArrLenger) {
   int Index = 0;
   for (int Count0 = 0; Count0 < ArrWidth; Count0++) {
     int Min = Count0;
