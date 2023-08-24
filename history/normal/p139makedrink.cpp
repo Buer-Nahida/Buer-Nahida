@@ -28,7 +28,7 @@ void Make(MakeJuice *JuiceName) {
   JuiceName->Brew();
   JuiceName->PourInCup();
   JuiceName->PutSomeInJuice();
-  delete JuiceName;
+  free(JuiceName);
   JuiceName = NULL;
 }
 
