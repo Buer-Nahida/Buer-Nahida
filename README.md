@@ -4,24 +4,16 @@
   
   <table>
     <tr>
-      <td>    
-        
-   ![Picture](https://avatars.githubusercontent.com/u/139795416?s=400&u=9fb74f1fd36fa77fae4843a68dec11ef1cbbcf4c&v=4)</td>
-    </tr>
-    <tr>
+      <td><img src="https://avatars.githubusercontent.com/u/139795416?s=400&u=9fb74f1fd36fa77fae4843a68dec11ef1cbbcf4c&v=4"></td>
       <td>
-        <img src="https://img.shields.io/badge/System-ArchLinux-7dcfff?style=for-the-badge&logo=archlinux&logoColor=7dcfff">
-        </td>
-        <td>
-        <img src="https://img.shields.io/badge/Style-C++-7aa2f7?style=for-the-badge&logo=cplusplus&logoColor=7aa2f7">
-        </td>
-        <td>
-        <img src="https://img.shields.io/badge/Editer-neovim-9ece6a?style=for-the-badge&logo=neovim&logoColor=9ece6a">
+        <img src="https://img.shields.io/badge/System-ArchLinux-7dcfff?style=for-the-badge&logo=archlinux&logoColor=7dcfff"width=100%>
+        <img src=https://github-readme-stats.vercel.app/api/top-langs/?username=SR-Mystar&layout=compact&theme=transparent&exclude_repo=XXiaoA.github.io border=0 width=100%>
+        <img src="https://img.shields.io/badge/Editer-neovim-9ece6a?style=for-the-badge&logo=neovim&logoColor=9ece6a"width=100%>
       </td>
     </tr>
-      
   </table>
-
+      <img src="https://img.shields.io/badge/Style-C++-7aa2f7?style=for-the-badge&logo=cplusplus&logoColor=7aa2f7"width=140%>
+      
   <br/>
   
 # [✨ My Hyprland Dotfiles ✨](https://github.com/SR-MyStar/Hyprdots)
