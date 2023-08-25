@@ -19,6 +19,10 @@
     </tr>
   </table>
 
+<<<<<<< HEAD
 # [✨ My Hyprland DOtfiles ✨](https://github.com/SR-MyStar/Hyprdots)
+=======
+# [✨ My Hyprland dotfiles ✨](https://github.com/SR-MyStar/Hyprdots)
+>>>>>>> 19edf613429c6cb120d3745e3c43a03d26969843
 ![2023-08-25-07-45-33-full](https://github.com/SR-MyStar/SR-MyStar/assets/139795416/6b9adae6-a588-4e24-ad4f-15f920f99581)
 </div>
