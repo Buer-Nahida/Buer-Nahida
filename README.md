@@ -4,6 +4,7 @@
   
   <table>
     <tr>
+      <td><img src="https://avatars.githubusercontent.com/u/139795416?s=400&u=9fb74f1fd36fa77fae4843a68dec11ef1cbbcf4c&v=4"width=100%></td>
       <td>
         <img src="https://img.shields.io/badge/System-ArchLinux-7dcfff?style=for-the-badge&logo=archlinux&logoColor=7dcfff"width=100%>
         <img src=https://github-readme-stats.vercel.app/api?username=SR-Mystar&count_private=true&theme=transparent&show_icons=true border=0 width=100%>
