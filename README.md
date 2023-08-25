@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/Hey👋, I'm -Star-c0caf5?style=for-the-badge&logo=starship&logoColor=c0caf5"width=100%>
+  <img src="https://img.shields.io/badge/Hey👋, I'm -MyStar-c0caf5?style=for-the-badge&logo=starship&logoColor=c0caf5"width=100%>
   <br/>
   
   <table>
