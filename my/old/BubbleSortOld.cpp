@@ -1,6 +1,6 @@
-#include "BubbleSort.h"
+#include "BubbleSortOld.h"
 
-void BubbleSort(int *ArrName, bool AscendingSort, int ArrLenger) {
+void BubbleSortOld(int *ArrName, bool AscendingSort, int ArrLenger) {
   for (int Count = ArrLenger - 1; Count > 0; Count--) {
     for (int Count0 = 0, Count1 = 1; Count1 <= Count; Count0++, Count1++) {
       if (AscendingSort == false) {
