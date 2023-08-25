@@ -290,14 +290,7 @@ void WorkerManager::ClearFile() {
   if (userYesOrNo == "yes") {
     this->m_fout.open(FILENAME, ios::trunc);
     this->m_fout.close();
-    if (this->m_WorkerArray != NULL) {
-      for (long long index = 0; index < this->m_WorkerNum; index++) {
-        free(this->m_WorkerArray[index]);
-      }
-
-      delete[] this->m_WorkerArray;
-      this->m_WorkerArray = NULL;
-    }
+    this->DeleteWorkerArray();
     this->m_FileIsEmpty = true;
     this->m_WorkerNum = 0;
     cout << "已完成" << endl;

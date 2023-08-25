@@ -57,13 +57,4 @@ void WorkerManager::InitWorkerArray() {
   this->m_fin.close();
 }
 
-WorkerManager::~WorkerManager() {
-  if (this->m_WorkerArray != NULL) {
-    for (long long index = 0; index < this->m_WorkerNum; index++) {
-      free(this->m_WorkerArray[index]);
-    }
-
-    delete[] this->m_WorkerArray;
-    this->m_WorkerArray = NULL;
-  }
-}
+WorkerManager::~WorkerManager() { this->DeleteWorkerArray(); }

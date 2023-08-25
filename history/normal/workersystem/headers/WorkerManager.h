@@ -37,4 +37,6 @@ protected:
   void SelectSort(bool AscendingSort);
   void AddWorker(long long arrayIndex, Worker **workerGroupName,
                  long long count);
+
+  void DeleteWorkerArray();
 };

@@ -5,6 +5,17 @@ void WorkerManager::PauseClear() {
   system("clear");
 }
 
+void WorkerManager::DeleteWorkerArray() {
+  if (this->m_WorkerArray != NULL) {
+    for (long long index = 0; index < this->m_WorkerNum; index++) {
+      free(this->m_WorkerArray[index]);
+    }
+
+    delete[] this->m_WorkerArray;
+    this->m_WorkerArray = NULL;
+  }
+}
+
 void WorkerManager::SaveFile() {
   this->m_fout.open(FILENAME);
   for (long long arrayIndex = 0; arrayIndex < this->m_WorkerNum; arrayIndex++) {
