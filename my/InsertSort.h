@@ -3,7 +3,7 @@
 using namespace std;
 
 template <typename T, unsigned M>
-void InsertSort(T (&arrName)[M], bool ascendingSort) {
+void InsertSort(T (&arrName)[M], bool ascendingSort = 0) {
   unsigned long long count1, arrLenger = (sizeof arrName / sizeof *arrName);
   T arrTemp;
   for (int count0 = 0; count0 < arrLenger; count0++) {

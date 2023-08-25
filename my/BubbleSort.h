@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-template <typename T> void BubbleSort(T &arrName, bool AscendingSort) {
+template <typename T> void BubbleSort(T &arrName, bool AscendingSort = 0) {
   unsigned long long arrLenger = (sizeof arrName / sizeof arrName[0]);
   for (unsigned long long count = arrLenger - 1; count > 0; count--)
     for (unsigned long long count0 = 0, count1 = 1; count1 <= count;
