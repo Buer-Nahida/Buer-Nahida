@@ -1,7 +1,8 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Hey👋, I'm -MyStar-c0caf5?style=for-the-badge&logo=starship&logoColor=c0caf5"width=100%>
+
   <br/>
-  
+
   <table>
     <tr>
       <td><img src="https://avatars.githubusercontent.com/u/139795416?s=400&u=9fb74f1fd36fa77fae4843a68dec11ef1cbbcf4c&v=4"width=100%></td>
