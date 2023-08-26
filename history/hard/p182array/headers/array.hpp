@@ -9,43 +9,25 @@ public:
     this->m_Lenger = lenger;
     this->m_Array = new Type *[lenger];
   }
-  template <typename T> Array(Array<T> &array) {
-    this->m_Array = new T *[array.m_Lenger];
+  Array(Array &array) {
+    this->m_Array = new Type *[array.m_Lenger];
     for (unsigned long long count = 0; count < array.Num(); count++) {
-      this->m_Array[count] = new T(*array.m_Array[count]);
+      this->m_Array[count] = new Type(*array.m_Array[count]);
     }
   }
-  template <typename T> Array(const Array<T> &array) {
-    this->m_Array = new T *[array.m_Lenger];
-    for (unsigned long long count = 0; count < array.Num(); count++) {
-      this->m_Array[count] = new T(*array.m_Array[count]);
-    }
-  }
-  template <typename T> void operator=(Array<T> &array0) {
+  Array &operator=(Array &array0) {
     for (unsigned long long count = 0; count < array0.Num(); count++) {
       delete this->m_Array[count];
       this->m_Array[count] = NULL;
     }
     delete this->m_Array;
     this->m_Array = NULL;
-    this->m_Array = new T *[array0.m_Lenger];
+    this->m_Array = new Type *[array0.m_Lenger];
     for (unsigned long long count = 0; count < array0.Num(); count++) {
-      this->m_Array[count] = new T(*array0.m_Array[count]);
+      this->m_Array[count] = new Type(*array0.m_Array[count]);
     }
     this->m_Lenger = array0.m_Lenger;
-  }
-  template <typename T> void operator=(const Array<T> &array0) {
-    for (unsigned long long count = 0; count < array0.Num(); count++) {
-      delete this->m_Array[count];
-      this->m_Array[count] = NULL;
-    }
-    delete this->m_Array;
-    this->m_Array = NULL;
-    this->m_Array = new T *[array0.m_Lenger];
-    for (unsigned long long count = 0; count < array0.Num(); count++) {
-      this->m_Array[count] = new T(*array0.m_Array[count]);
-    }
-    this->m_Lenger = array0.m_Lenger;
+    return *this;
   }
   Type operator[](unsigned long long index) {
     if (index >= this->Num()) {
@@ -54,12 +36,10 @@ public:
     return *this->m_Array[index];
   }
   ~Array() {
-    if (this->Num() != 0) {
-      for (unsigned long long count = 0; count < this->Num(); count++) {
-        delete this->m_Array[count];
-      }
-      delete this->m_Array;
+    for (unsigned long long count = 0; count < this->Num(); count++) {
+      delete this->m_Array[count];
     }
+    delete this->m_Array;
   }
 
   void Add(Type num) { this->m_Array[this->Num()] = new Type(num); }
