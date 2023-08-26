@@ -1,8 +1,8 @@
-#include "BubbleSort.h"
+#include "BubbleSort.hpp"
 #ifdef BUG
-#include "InsertSort.h"
+#include "InsertSort.hpp"
 #endif // BugSort
-#include "PrintArray.h"
-#include "SelectSort.h"
+#include "PrintArray.hpp"
+#include "SelectSort.hpp"
 #include <bits/stdc++.h>
 using namespace std;
