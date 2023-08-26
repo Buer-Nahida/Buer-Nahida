@@ -39,10 +39,8 @@ public:
 
   void Add(Type num) { this->m_Array[this->Num()] = new Type(num); }
   void Delete() {
-    if (this->Num() != 0) {
-      delete this->m_Array[this->Num() - 1];
-      this->m_Array[this->Num() - 1] = NULL;
-    }
+    delete this->m_Array[this->Num() - 1];
+    this->m_Array[this->Num() - 1] = NULL;
   }
   unsigned long long Lenger() { return this->m_Lenger; }
   unsigned long long Num() {
