@@ -1,14 +1,13 @@
 #include "headers/array.hpp"
-#include <iostream>
 
 int main(int argc, char *argv[]) {
-  Array<int> a(6);
-  a.Add(1);
-  a.Add(1);
-  a.Add(4);
-  a.Add(5);
-  a.Add(1);
-  a.Add(4);
+  Array<string> a(6);
+  a.Add("hello worlda");
+  a.Add("hello worldb");
+  a.Add("hello worldc");
+  a.Add("hello worldd");
+  a.Add("hello worlde");
+  a.Add("hello worldf");
   for (int i = 0; i < a.Num(); i++) {
     cout << a[i] << " ";
   }

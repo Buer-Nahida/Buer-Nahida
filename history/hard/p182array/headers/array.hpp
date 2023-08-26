@@ -1,5 +1,5 @@
 #pragma once
-#include <cstdlib>
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -49,7 +49,7 @@ public:
   }
   Type operator[](unsigned long long index) {
     if (index >= this->Num()) {
-      return random();
+      return (Type)NULL;
     }
     return *this->m_Array[index];
   }
@@ -62,9 +62,7 @@ public:
     }
   }
 
-  template <typename T> void Add(T num) {
-    this->m_Array[this->Num()] = new T(num);
-  }
+  void Add(Type num) { this->m_Array[this->Num()] = new Type(num); }
   void Delete() {
     if (this->Num() != 0) {
       delete this->m_Array[this->Num() - 1];
