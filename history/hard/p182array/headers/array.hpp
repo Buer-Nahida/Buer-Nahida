@@ -29,7 +29,7 @@ public:
     this->m_Lenger = array0.m_Lenger;
     return *this;
   }
-  Type operator[](unsigned long long index) {
+  Type &operator[](unsigned long long index) {
     if (index >= this->Num()) {
       return (Type)NULL;
     }
