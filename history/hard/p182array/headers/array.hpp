@@ -29,12 +29,7 @@ public:
     this->m_Lenger = array0.m_Lenger;
     return *this;
   }
-  Type &operator[](unsigned long long index) {
-    if (index >= this->Num()) {
-      return (Type)NULL;
-    }
-    return *this->m_Array[index];
-  }
+  Type &operator[](unsigned long long index) { return *this->m_Array[index]; }
   ~Array() {
     for (unsigned long long count = 0; count < this->Num(); count++) {
       delete this->m_Array[count];
