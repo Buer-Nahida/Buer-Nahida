@@ -49,7 +49,7 @@ public:
       this->m_Array[this->Num() - 1] = NULL;
     }
   }
-  unsigned long long Lenger() { return m_Lenger; }
+  unsigned long long Lenger() { return this->m_Lenger; }
   unsigned long long Num() {
     unsigned long long count = 0;
     while (count < this->m_Lenger) {
