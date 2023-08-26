@@ -47,6 +47,12 @@ public:
     }
     this->m_Lenger = array0.m_Lenger;
   }
+  Type operator[](unsigned long long index) {
+    if (index >= this->Num()) {
+      return random();
+    }
+    return *this->m_Array[index];
+  }
   ~Array() {
     if (this->Num() != 0) {
       for (unsigned long long count = 0; count < this->Num(); count++) {
@@ -56,12 +62,6 @@ public:
     }
   }
 
-  Type Get(unsigned long long index) {
-    if (index >= this->Num()) {
-      return random();
-    }
-    return *this->m_Array[index];
-  }
   template <typename T> void Add(T num) {
     this->m_Array[this->Num()] = new T(num);
   }
