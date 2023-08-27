@@ -21,7 +21,7 @@ ostream &operator<<(ostream &outPut, Test &testClass) {
 }
 
 int main(int argc, char *argv[]) {
-  string strHello = "xello";
-  PrintArray(strHello, strHello.length(), "");
+  string strEmail = "myemail@gmail.com";
+  cout << strEmail.substr(0, strEmail.find('@')) << endl;
   return 0;
 }
