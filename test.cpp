@@ -21,27 +21,7 @@ ostream &operator<<(ostream &outPut, Test &testClass) {
 }
 
 int main(int argc, char *argv[]) {
-  string str;
-
-  char a[] = "Hello world!";
-  string strCharArr;
-  /* strCharArr = a; */
-
-  /* strCharArr.assign("Hello Cpp"); */
-  /* strCharArr.assign(a); */
-
-  /* strCharArr.assign(a, 4); */
-  strCharArr.assign("Hello Cpp", 5);
-  cout << strCharArr << endl;
-
-  string strStr;
-  /* strStr = strCharArr; */
-  strStr.assign(strCharArr);
-  cout << strStr << endl;
-
-  string strChar;
-  /* strChar = 'a'; */
-  strChar.assign(2, 'a');
-  cout << strChar << endl;
+  string strHello = "xello";
+  PrintArray(strHello, strHello.length(), "");
   return 0;
 }
