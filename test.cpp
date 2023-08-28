@@ -21,7 +21,7 @@ ostream &operator<<(ostream &outPut, Test &testClass) {
 }
 
 int main(int argc, char *argv[]) {
-  string strEmail = "myemail@gmail.com";
-  cout << strEmail.substr(0, strEmail.find('@')) << endl;
+  vector<int> v1{1, 1, 4, 5, 1, 4};
+  PrintAll(v1);
   return 0;
 }
