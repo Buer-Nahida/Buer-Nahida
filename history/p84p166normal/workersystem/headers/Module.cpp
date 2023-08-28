@@ -1,7 +1,7 @@
 #include "WorkerManager.h"
 
 void WorkerManager::PauseClear() {
-  system("~/test/history/normal/workersystem/headers/pause");
+  system("~/test/history/p84p166normal/workersystem/headers/pause");
   system("clear");
 }
 

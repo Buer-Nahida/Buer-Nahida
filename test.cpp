@@ -23,5 +23,6 @@ ostream &operator<<(ostream &outPut, Test &testClass) {
 int main(int argc, char *argv[]) {
   vector<int> v1{1, 1, 4, 5, 1, 4};
   PrintAll(v1);
+  cout << v1.front() << endl << v1.back() << endl;
   return 0;
 }
