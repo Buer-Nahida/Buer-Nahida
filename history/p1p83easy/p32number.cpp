@@ -3,7 +3,8 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char *argv[]) {
+int main() {
+  int argc;
   cout << "欢迎来到猜数字游戏" << endl;
   cout << "正在生成数字中...\n" << endl;
 
