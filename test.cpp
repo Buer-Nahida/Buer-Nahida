@@ -36,6 +36,8 @@ template <typename T> void HelloTemplate(const T &helloReference) {
   }
 }
 
+char helloFunc() { return '\n'; }
+
 char helloFunc(helloStruct helloOverload) { return helloOverload.helloChar; }
 
 int HELLOMAIN(int helloInt, char *helloCharArray[]) {
