@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-using namespace std;
 
 template <typename T, unsigned M>
 void InsertSort(T (&arrName)[M], bool ascendingSort = 0) {

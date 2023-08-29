@@ -1,17 +1,17 @@
 #pragma once
 #include <iostream>
-using namespace std;
 
-template <typename T> void BubbleSort(T &arrName, bool AscendingSort = 0) {
-  unsigned long long arrLenger = (sizeof arrName / sizeof arrName[0]);
-  for (unsigned long long count = arrLenger - 1; count > 0; count--)
-    for (unsigned long long count0 = 0, count1 = 1; count1 <= count;
-         count0++, count1++)
-      if (AscendingSort) {
-        if (arrName[count0] > arrName[count1])
-          swap(arrName[count0], arrName[count1]);
+template <typename T>
+void BubbleSort(T &arrName, bool ascendingSort = 0,
+                unsigned long long arrLenger = (sizeof arrName /
+                                                sizeof arrName[0])) {
+  for (unsigned long long count0 = arrLenger - 1; count0 > 0; count0--)
+    for (unsigned long long count1 = 0; count1 < count0; count1++)
+      if (ascendingSort) {
+        if (arrName[count1] > arrName[count1 + 1])
+          std::swap(arrName[count1], arrName[count1 + 1]);
       } else {
-        if (arrName[count0] < arrName[count1])
-          swap(arrName[count0], arrName[count1]);
+        if (arrName[count1] < arrName[count1 + 1])
+          std::swap(arrName[count1], arrName[count1 + 1]);
       }
 }
