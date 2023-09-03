@@ -2,65 +2,70 @@
 #include <ctime>
 #include <iostream>
 #include <map>
-#include <set>
+#include <string>
 #include <vector>
 using namespace std;
 
-void PrintWorkers(const multimap<short, char> &mapName) {
-  multimap<short, char>::const_iterator it0 = mapName.begin(),
-                                        it1 = ++mapName.begin();
+class Worker {
+public:
+  Worker(const string name, const short salary) {
+    this->m_Name = name;
+    this->m_Salary = salary;
+  }
+  string m_Name;
+  short m_Salary;
+  bool operator<(Worker worker) const { return this->m_Name < worker.m_Name; }
+};
+
+void PrintWorkers(const multimap<short, Worker> &mapName) {
+  multimap<short, Worker>::const_iterator it0 = mapName.begin(),
+                                          it1 = ++mapName.begin();
+  cout << "策划部门：" << endl
+       << "姓名\t工资" << endl
+       << "-----------------------------------------" << endl;
   for (short count = 0; count < 10; count++) {
-    if (it0->first == 0) {
-      cout << "策划 " << it0->second << endl;
-    } else if (it0->first == 1) {
-      cout << "美术 " << it0->second << endl;
-    } else {
-      cout << "研发 " << it0->second << endl;
-    }
     if (it0->first != it1->first) {
-      if (it1 != mapName.end()) {
-        cout << endl;
+      if (it0->first == 1) {
+        cout << endl
+             << "美术部门：" << endl
+             << "姓名\t工资" << endl
+             << "-----------------------------------------" << endl;
+      } else if (it0->first == 2) {
+        cout << endl
+             << "研发部门：" << endl
+             << "姓名\t工资" << endl
+             << "-----------------------------------------" << endl;
       }
     }
+    cout << it0->second.m_Name << "\t" << it0->second.m_Salary << endl;
     it0++;
     it1++;
   }
 }
 
-void InitGroups(vector<char> &workers, vector<set<char>> &setGroup) {
+void InitGroups(vector<Worker> &workers) {
+  const char *nameSeed = "ABCDEFGHIJ";
   for (char count = 0; count < 10; count++) {
-    workers.push_back("ABCDEFGHIJ"[count]);
-  }
-  for (char count = 0; count < 3; count++) {
-    setGroup.push_back(set<char>());
+    workers.push_back(
+        Worker((string) "员工" += nameSeed[count], rand() % 3501 + 3000));
   }
 }
 
-void Grouping(vector<set<char>> &setGroup, vector<char> &workers) {
+void Grouping(multimap<short, Worker> &workerGroup, vector<Worker> &workers) {
   for (int count = 9; count >= 0; count--) {
-    short rando = rand() % (count + 1);
-    setGroup[rand() % 3].insert(workers[rando]);
-    workers.erase(workers.begin() + rando);
-  }
-}
-
-void MoveWorker(multimap<short, char> &workerGroup,
-                vector<set<char>> &setGroup) {
-  for (short count = 0; count < 3; count++) {
-    for (auto &var1 : setGroup[count]) {
-      workerGroup.emplace(count, var1);
-    }
+    short deptID = rand() % (count + 1);
+    workerGroup.emplace(rand() % 3, workers[deptID]);
+    workers.erase(workers.begin() + deptID);
   }
 }
 
 int main(int argc, char *argv[]) {
-  srand((unsigned int)time(NULL));
-  vector<char> workers;
-  vector<set<char>> setGroup;
-  multimap<short, char> workerGroup;
-  InitGroups(workers, setGroup);
-  Grouping(setGroup, workers);
-  MoveWorker(workerGroup, setGroup);
+  srand((unsigned long)time(NULL));
+  vector<Worker> workers;
+  workers.reserve(10);
+  multimap<short, Worker> workerGroup;
+  InitGroups(workers);
+  Grouping(workerGroup, workers);
   PrintWorkers(workerGroup);
   return 0;
 }
