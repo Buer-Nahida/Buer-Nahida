@@ -8,7 +8,7 @@ int main() {
   cout << "欢迎来到猜数字游戏" << endl;
   cout << "正在生成数字中...\n" << endl;
 
-  srand(time(0));
+  srand((unsigned int)time(NULL));
   argc = rand() % 100 + 1;
 
   cout << "生成完毕\n" << endl;
