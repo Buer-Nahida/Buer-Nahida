@@ -1,8 +1,7 @@
 #include "BubbleSort.hpp"
-#ifdef BUG
+#ifdef FIXME
 #include "InsertSort.hpp"
-#endif // BugSort
+#endif // InsertSort (BUG)
 #include "PrintAll.hpp"
 #include "SelectSort.hpp"
 #include <bits/stdc++.h>
-using namespace std;

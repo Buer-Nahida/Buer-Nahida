@@ -1,7 +1,9 @@
 #include "WorkerManager.h"
 
 void WorkerManager::PauseClear() {
-  system("~/test/history/p84p166normal/workersystem/headers/pause");
+  cout << "按 Enter 键继续";
+  cin.get();
+  cin.get();
   system("clear");
 }
 

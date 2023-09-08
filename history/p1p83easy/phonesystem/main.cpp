@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
       break;
 
     case 6:
-      Clear(&Ars);
+      ClearAll(&Ars);
       break;
 
     default:

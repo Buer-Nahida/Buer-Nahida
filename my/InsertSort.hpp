@@ -1,6 +1,9 @@
-#pragma once
+#define IS_HEADERS
+#ifdef IS_HEADERS
 #include <iostream>
+#endif // Headers
 
+namespace star {
 template <typename T, unsigned M>
 void InsertSort(T (&arrName)[M], bool ascendingSort = 0) {
   unsigned long long count1, arrLenger = (sizeof arrName / sizeof *arrName);
@@ -26,3 +29,5 @@ void InsertSort(T (&arrName)[M], bool ascendingSort = 0) {
     arrName[count1 + 1] = arrTemp;
   }
 }
+} // namespace star
+#undef IS_HEADERS

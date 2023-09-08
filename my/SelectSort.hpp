@@ -1,6 +1,9 @@
-#pragma once
+#define SS_HEADERS
+#ifdef SS_HEADERS
 #include <iostream>
+#endif // Headers
 
+namespace star {
 template <typename T>
 void SelectSort(T &arrName, bool ascendingSort = 0,
                 unsigned long long arrLenger = (sizeof arrName /
@@ -18,3 +21,5 @@ void SelectSort(T &arrName, bool ascendingSort = 0,
     std::swap(arrName[minOrMax], arrName[count0]);
   }
 }
+} // namespace star
+#undef SS_HEADERS

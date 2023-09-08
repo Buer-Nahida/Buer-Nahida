@@ -1,6 +1,9 @@
-#pragma once
+#define BS_HEADERS
+#ifdef BS_HEADERS
 #include <iostream>
+#endif // Headers
 
+namespace star {
 template <typename T>
 void BubbleSort(T &arrName, bool ascendingSort = 0,
                 unsigned long long arrLenger = (sizeof arrName /
@@ -15,3 +18,5 @@ void BubbleSort(T &arrName, bool ascendingSort = 0,
           std::swap(arrName[count1], arrName[count1 + 1]);
       }
 }
+} // namespace star
+#undef BS_HEADERS

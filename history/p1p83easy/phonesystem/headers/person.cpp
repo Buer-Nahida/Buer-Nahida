@@ -1,5 +1,12 @@
 #include "person.h"
 
+void ClearSceen() {
+  cout << "按 Enter 键继续";
+  cin.get();
+  cin.get();
+  system("clear");
+}
+
 void addPerson(Addressbooks *AddressbooksName) {
   if (AddressbooksName->Size == MAX)
     cout << "通讯录已满" << endl;
@@ -40,10 +47,8 @@ void addPerson(Addressbooks *AddressbooksName) {
     cout << "添加完成" << endl;
 
     AddressbooksName->Size++;
-
-    system("vifm-pause");
-    system("clear");
   }
+  ClearSceen();
 }
 
 void showPerson(Addressbooks *AddressbooksName) {
@@ -53,8 +58,7 @@ void showPerson(Addressbooks *AddressbooksName) {
        << endl;
   if (AddressbooksName->Size == 0) {
     cout << "空" << endl;
-    system("vifm-pause");
-    system("clear");
+    ClearSceen();
   } else {
     for (short i = 0; i < AddressbooksName->Size; i++) {
       cout << AddressbooksName->personArr[i].Name << "\t\t\t"
@@ -63,9 +67,8 @@ void showPerson(Addressbooks *AddressbooksName) {
            << AddressbooksName->personArr[i].PhoneNum << "\t\t\t"
            << AddressbooksName->personArr[i].Addr << endl;
     }
-    system("vifm-pause");
-    system("clear");
   }
+  ClearSceen();
 }
 
 int isExist(Addressbooks *AddressbooksName, string i_Name) {
@@ -101,8 +104,7 @@ void deletePerson(Addressbooks *AddressbooksName) {
     }
   }
   AddressbooksName->Size--;
-  system("vifm-pause");
-  system("clear");
+  ClearSceen();
 }
 
 void findPerson(Addressbooks *AddressbooksName) {
@@ -125,8 +127,7 @@ void findPerson(Addressbooks *AddressbooksName) {
          << AddressbooksName->personArr[f_Ret].PhoneNum << "\t\t\t"
          << AddressbooksName->personArr[f_Ret].Addr << endl;
   }
-  system("vifm-pause");
-  system("clear");
+  ClearSceen();
 }
 
 void modifyPerson(Addressbooks *AddressbooksName) {
@@ -182,11 +183,10 @@ void modifyPerson(Addressbooks *AddressbooksName) {
       goto Select;
     }
   }
-  system("vifm-pause");
-  system("clear");
+  ClearSceen();
 }
 
-void Clear(Addressbooks *AddressbooksName) {
+void ClearAll(Addressbooks *AddressbooksName) {
   AddressbooksName->Size = 0;
   cout << "你真的想清空所有人吗？（y/N）" << endl;
   string c_Temp;
@@ -195,7 +195,6 @@ void Clear(Addressbooks *AddressbooksName) {
     cout << "所有人已经无了" << endl;
   } else {
     cout << "已取消" << endl;
-    system("vifm-pause");
-    system("clear");
   }
+  ClearSceen();
 }
