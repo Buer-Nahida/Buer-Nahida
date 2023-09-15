@@ -4,4 +4,10 @@
 #endif // InsertSort (BUG)
 #include "PrintAll.hpp"
 #include "SelectSort.hpp"
-#include <bits/stdc++.h>
+typedef signed char schar;
+typedef short int16;
+typedef long long int64;
+typedef unsigned char uchar;
+typedef unsigned short uint16;
+typedef unsigned int uint32;
+typedef unsigned long long uint64;

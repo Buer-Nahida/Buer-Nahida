@@ -1,4 +1,3 @@
-#include <vector>
 #define P_HEADERS
 #ifdef P_HEADERS
 #include <iostream>
@@ -7,32 +6,26 @@
 #endif // Headers
 
 namespace star {
-template <typename T0, typename T1, typename T2>
-void PrintAll(const std::unordered_map<T0, T1, T2> &mapName,
+template <typename UnMapKey1, typename UnMapKey2, typename UnMapKey3>
+void PrintAll(
+    const std::unordered_map<UnMapKey1, UnMapKey2, UnMapKey3> &mapName,
+    const char *sepChar = " ") {
+  for (const auto &arrVar : mapName) {
+    std::cout << arrVar.first << sepChar << arrVar.second << std::endl;
+  }
+}
+
+template <typename MapKey1, typename MapKey2, typename MapKey3>
+void PrintAll(const std::map<MapKey1, MapKey2, MapKey3> &mapName,
               const char *sepChar = " ") {
-  for (auto &arrVar : mapName) {
+  for (const auto &arrVar : mapName) {
     std::cout << arrVar.first << sepChar << arrVar.second << std::endl;
   }
 }
 
-template <typename T0, typename T1, typename T2>
-void PrintAll(const std::map<T0, T1, T2> &mapName, const char *sepChar = " ") {
-  for (auto &arrVar : mapName) {
-    std::cout << arrVar.first << sepChar << arrVar.second << std::endl;
-  }
-}
-
-template <typename T>
-void PrintAll(const T &arrName, const char *sepChar = " ") {
-  for (auto &arrVar : arrName) {
-    std::cout << arrVar << sepChar;
-  }
-  std::cout << std::endl;
-}
-
-template <typename T>
-void PrintAll(const std::vector<bool, T> &arrName, const char *sepChar = " ") {
-  for (auto arrVar : arrName) {
+template <typename ArrType>
+void PrintAll(const ArrType &arrName, const char *sepChar = " ") {
+  for (const auto &arrVar : arrName) {
     std::cout << arrVar << sepChar;
   }
   std::cout << std::endl;
