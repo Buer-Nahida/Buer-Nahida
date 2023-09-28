@@ -4,29 +4,19 @@
 #endif // Headers
 
 namespace star {
-template <typename T, unsigned M>
-void InsertSort(T (&arrName)[M], bool ascendingSort = 0) {
-  unsigned long long count1, arrLenger = (sizeof arrName / sizeof *arrName);
-  T arrTemp;
-  for (int count0 = 0; count0 < arrLenger; count0++) {
-    arrTemp = arrName[count0];
-    count1 = count0 - 1;
-    while (count1 >= 0) {
-      if (ascendingSort) {
-        if (arrTemp <= arrName[count1]) {
-          arrName[count1 + 1] = arrName[count1];
-          count1 -= 1;
-        } else
-          break;
+template <typename T, unsigned long long arrLenger>
+void InsertSort(T (&arrName)[arrLenger], bool ascendingSort = 0) {
+  for (unsigned long long For0 = 1; For0 < arrLenger; For0++) {
+    T tempArr = arrName[For0];
+    unsigned long long For1 = For0 - 1;
+    for (; For1 >= 0; For1--) {
+      if (tempArr <= arrName[For1]) {
+        arrName[For1 + 1] = arrName[For1];
       } else {
-        if (arrTemp >= arrName[count1]) {
-          arrName[count1 + 1] = arrName[count1];
-          count1 -= 1;
-        } else
-          break;
+        break;
       }
     }
-    arrName[count1 + 1] = arrTemp;
+    arrName[For1 + 1] = tempArr;
   }
 }
 } // namespace star

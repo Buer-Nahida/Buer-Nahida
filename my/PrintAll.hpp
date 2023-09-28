@@ -6,9 +6,9 @@
 #endif // Headers
 
 namespace star {
-template <typename UnMapKey1, typename UnMapKey2, typename UnMapKey3>
+template <typename UD_MapKey1, typename UD_MapKey2, typename UD_MapKey3>
 void PrintAll(
-    const std::unordered_map<UnMapKey1, UnMapKey2, UnMapKey3> &mapName,
+    const std::unordered_map<UD_MapKey1, UD_MapKey2, UD_MapKey3> &mapName,
     const char *sepChar = " ") {
   for (const auto &arrVar : mapName) {
     std::cout << arrVar.first << sepChar << arrVar.second << std::endl;
