@@ -1,5 +1,6 @@
 #include "headers/SpeechSystem.hpp"
 #include <cstdlib>
+#include <ios>
 #include <iostream>
 
 int main(int argc, char *argv[]) {

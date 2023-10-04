@@ -2,24 +2,24 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-  int n1 = 1, n2 = 1;
-  for (; n2 < 9 && n1 < 9;) {
+    int n1 = 1, n2 = 1;
+    for (; n2 < 9 && n1 < 9;) {
 
-    for (; n2 <= 9;) {
+        for (; n2 <= 9;) {
 
-      if (n1 == n2) {
-        cout << n1 << "x" << n2 << "=" << n1 * n2 << endl;
-        n2++;
-        n1 = 1;
-      } else {
-        cout << n1 << "x" << n2 << "=" << n1 * n2 << "\t";
-        n1++;
-      }
+            if (n1 == n2) {
+                cout << n1 << "x" << n2 << "=" << n1 * n2 << endl;
+                n2++;
+                n1 = 1;
+            } else {
+                cout << n1 << "x" << n2 << "=" << n1 * n2 << "\t";
+                n1++;
+            }
+        }
+        cout << endl;
     }
-    cout << endl;
-  }
 
-  return 0;
+    return 0;
 }
 /*#include <iostream>
 #include <ostream>
