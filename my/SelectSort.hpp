@@ -1,11 +1,10 @@
-#define SS_HEADERS
-#ifdef SS_HEADERS
+#pragma once
+#include <array>
 #include <iostream>
-#endif // Headers
 
 namespace star {
 template <typename T, unsigned long long arrLenger>
-void SelectSort(T &arrName, bool ascendingSort = 0) {
+void SelectSort(std::array<T, arrLenger> &arrName, bool ascendingSort = 0) {
     for (unsigned long long count0 = 0; count0 < arrLenger; count0++) {
         unsigned long long minOrMax = count0;
         for (unsigned long long count1 = count0; count1 < arrLenger; count1++)
@@ -20,4 +19,3 @@ void SelectSort(T &arrName, bool ascendingSort = 0) {
     }
 }
 } // namespace star
-#undef SS_HEADERS

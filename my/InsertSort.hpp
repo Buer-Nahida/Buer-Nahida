@@ -1,11 +1,9 @@
-#define IS_HEADERS
-#ifdef IS_HEADERS
-#include <iostream>
-#endif // Headers
+#pragma once
+#include <array>
 
 namespace star {
 template <typename T, unsigned long long arrLenger>
-void InsertSort(T (&arrName)[arrLenger], bool ascendingSort = 0) {
+void InsertSort(std::array<T, arrLenger> &arrName, bool ascendingSort = 0) {
     for (unsigned long long For0 = 1; For0 < arrLenger; For0++) {
         T tempArr = arrName[For0];
         unsigned long long For1 = For0 - 1;
@@ -20,4 +18,3 @@ void InsertSort(T (&arrName)[arrLenger], bool ascendingSort = 0) {
     }
 }
 } // namespace star
-#undef IS_HEADERS

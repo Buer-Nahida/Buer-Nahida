@@ -1,11 +1,10 @@
-#define BS_HEADERS
-#ifdef BS_HEADERS
+#pragma once
+#include <array>
 #include <iostream>
-#endif // Headers
 
 namespace star {
 template <typename T, unsigned long long arrLenger>
-void BubbleSort(T (&arrName)[arrLenger], bool ascendingSort = 0) {
+void BubbleSort(std::array<T, arrLenger> &arrName, bool ascendingSort = 0) {
     for (unsigned long long count0 = arrLenger - 1; count0 > 0; count0--)
         for (unsigned long long count1 = 0; count1 < count0; count1++)
             if (ascendingSort) {
@@ -17,4 +16,3 @@ void BubbleSort(T (&arrName)[arrLenger], bool ascendingSort = 0) {
             }
 }
 } // namespace star
-#undef BS_HEADERS
