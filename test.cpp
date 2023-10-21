@@ -1,28 +1,10 @@
-#include "my/PrintAll.hpp"
 #include "my/star.h"
-#include <algorithm>
-#include <bits/types/clock_t.h>
-#include <ctime>
-#include <iostream>
-using namespace std;
-using ll = long long;
-using ull = unsigned long long;
+#include <sys/sendfile.h>
+#include <vector>
+#define true  0
+#define false 1
 
 int main(int argc, char *argv[]) {
-  long double delay;
-  cin >> delay;
-#ifdef DEBUG
-  cout << delay << '\n';
-#endif // DEBUG
-  delay *= CLOCKS_PER_SEC;
-#ifdef DEBUG
-  cout << delay << '\n';
-#endif // DEBUG
-  clock_t start = clock();
-#ifdef DEBUG
-  cout << start << '\n';
-#endif // DEBUG
-  while (clock() - start < delay)
-    ;
-  return 0;
+    std::vector<long long> a{1, 2, 6, 4, 3, 5, 7, 5, 9, 4};
+    return 0;
 }

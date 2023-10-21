@@ -7,18 +7,15 @@ void InsertSortOld(int *Arr, bool AscendingSort, int ArrLenger) {
         j = i - 1;
         while (j >= 0) {
             if (AscendingSort == true) {
-
                 if (x <= Arr[j]) {
-                    Arr[j + 1] = Arr[j];
-                    j -= 1;
-                } else
-                    break;
+                    Arr[j + 1]  = Arr[j];
+                    j          -= 1;
+                } else break;
             } else {
                 if (x >= Arr[j]) {
-                    Arr[j + 1] = Arr[j];
-                    j -= 1;
-                } else
-                    break;
+                    Arr[j + 1]  = Arr[j];
+                    j          -= 1;
+                } else break;
             }
         }
         Arr[j + 1] = x;
