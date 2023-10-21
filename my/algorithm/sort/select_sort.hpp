@@ -3,7 +3,7 @@
 
 namespace star {
 template <typename T, unsigned long long arrLenger>
-void SelectSort(std::array<T, arrLenger> &arrName, bool ascendingSort = 0) {
+void select_sort(std::array<T, arrLenger> &arrName, bool ascendingSort = 0) {
     for (unsigned long long count0 = 0; count0 < arrLenger; count0++) {
         unsigned long long minOrMax = count0;
         for (unsigned long long count1 = count0; count1 < arrLenger; count1++)

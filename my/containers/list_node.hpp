@@ -5,14 +5,14 @@
 #define OUT_OF_BOUNDS  102
 
 namespace star {
-template <typename T> class ListNode {
+template <typename T> class list_node {
 public:
-    ListNode()                            = default;
-    ListNode(ListNode &&)                 = default;
-    ListNode(const ListNode &)            = default;
-    ListNode &operator=(ListNode &&)      = default;
-    ListNode &operator=(const ListNode &) = default;
-    ~ListNode()                           = default;
+    list_node()                             = default;
+    list_node(list_node &&)                 = default;
+    list_node(const list_node &)            = default;
+    list_node &operator=(list_node &&)      = default;
+    list_node &operator=(const list_node &) = default;
+    ~list_node()                            = default;
 
     inline T at(const unsigned long long &&index) const {
         if (this->headNode.begin == nullptr) {
@@ -60,7 +60,7 @@ public:
             ++this->headNode.lenger;
             return;
         }
-        node *temp = new node({this->headNode.end->prev, value, nullptr});
+        node *temp               = new node({this->headNode.end->prev, value, nullptr});
         this->headNode.end->next = temp;
         temp->prev               = this->headNode.end;
         this->headNode.end       = temp;

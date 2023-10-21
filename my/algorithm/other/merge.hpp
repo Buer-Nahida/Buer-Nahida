@@ -2,7 +2,7 @@
 
 namespace star {
 template <typename Type0, typename Type1, typename TypeTarget>
-void Merge(Type0 iterStart0, Type0 iterEnd0, Type1 iterStart1, Type1 iterEnd1,
+void merge(Type0 iterStart0, Type0 iterEnd0, Type1 iterStart1, Type1 iterEnd1,
            TypeTarget iterTarget) {
     for (; iterStart0 != iterEnd0 && iterStart1 != iterEnd1; ++iterTarget) {
         if (*iterStart0 <= *iterStart1) {

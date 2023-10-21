@@ -1,5 +1,0 @@
-{
-    "scripts": {
-        "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0  -n ./changelog-option.js"
-    }
-}
