@@ -1,3 +1,6 @@
-[submodule "my"]
+[submodule "Star C++ Library"]
 	path = my
-	url = git@github.com:SR-MyStar/Star-Standard-Library.git
+	url = git@github.com:SR-MyStar/star.git
+[submodule "myrepo/Hyprdots"]
+	path = myrepo/Hyprdots
+	url = git@github.com:SR-MyStar/Hyprdots.git
