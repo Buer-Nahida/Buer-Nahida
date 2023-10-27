@@ -1,0 +1,3 @@
+[submodule "my"]
+	path = my
+	url = git@github.com:SR-MyStar/Star-Standard-Library.git
