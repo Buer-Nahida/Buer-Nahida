@@ -8,14 +8,14 @@ public:
         for (const char &chK : key) {
             if (this->m_MessageKey.empty() || !this->m_MessageKey.count(chK)) {
                 if (chK != ' ') {
-                    this->m_MessageKey.insert({chK, ch});
+                    this->m_MessageKey.emplace(chK, ch);
                     ++ch;
                 }
             }
         }
         for (char &var : message) {
             if (var != ' ') {
-                var = this->m_MessageKey.find(var)->second;
+                var = this->m_MessageKey[var];
             }
         }
         return message;

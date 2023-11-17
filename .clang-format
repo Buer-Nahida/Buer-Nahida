@@ -32,9 +32,9 @@ AlignConsecutiveShortCaseStatements:
     Enabled:          true
     AcrossEmptyLines: false
     AcrossComments:   true
-    AlignCaseColons:  true
+    AlignCaseColons:  false
 AlignEscapedNewlines: Right
-AlignOperands:   Align
+AlignOperands:  AlignAfterOperator
 AlignTrailingComments:
     Kind:            Always
     OverEmptyLines:  0
@@ -43,7 +43,7 @@ AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortEnumsOnASingleLine: true
-AllowShortFunctionsOnASingleLine: All
+AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 AllowShortLambdasOnASingleLine: All
 AllowShortLoopsOnASingleLine: true
@@ -80,16 +80,16 @@ BraceWrapping:
 BreakAfterAttributes: Never
 BreakAfterJavaFieldAnnotations: false
 BreakArrays:     false
-BreakBeforeBinaryOperators: None
+BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeConceptDeclarations: Always
 BreakBeforeBraces: Attach
 BreakBeforeInlineASMColon: OnlyMultiline
 BreakBeforeTernaryOperators: true
-BreakConstructorInitializers: BeforeColon
+BreakConstructorInitializers: BeforeComma
 BreakInheritanceList: BeforeColon
 BreakStringLiterals: true
-ColumnLimit:     100
-CommentPragmas:  '^ IWYU pragma:'
+ColumnLimit:              80
+CommentPragmas:  ''
 CompactNamespaces: false
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
@@ -99,7 +99,7 @@ DisableFormat:   false
 EmptyLineAfterAccessModifier: Never
 EmptyLineBeforeAccessModifier: LogicalBlock
 ExperimentalAutoDetectBinPacking: false
-FixNamespaceComments: false
+FixNamespaceComments: true
 ForEachMacros:
     - foreach
     - Q_FOREACH
@@ -150,7 +150,7 @@ LineEnding:      DeriveLF
 MacroBlockBegin: ''
 MacroBlockEnd:   ''
 MaxEmptyLinesToKeep: 1
-NamespaceIndentation: None
+NamespaceIndentation: Inner
 ObjCBinPackProtocolList: Auto
 ObjCBlockIndentWidth: 4
 ObjCBreakBeforeNestedBlockParam: true
