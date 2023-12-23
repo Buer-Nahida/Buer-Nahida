@@ -8,9 +8,6 @@
       <td>
         <img src="https://github-readme-stats.vercel.app/api?username=SR-MyStar&count_private=true&theme=transparent&show_icons=true" border=0 width=100%>
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SR-MyStar&layout=compact&theme=transparent&exclude_repo=SR-MyStar.github.io" border=0 width=100%>
-        <img src="https://img.shields.io/badge/System-ArchLinux-7dcfff?style=for-the-badge&logo=archlinux&logoColor=7dcfff"width=100%>
-        <img src="https://img.shields.io/badge/Editer-Neovim-9ece6a?style=for-the-badge&logo=neovim&logoColor=9ece6a"width=100%>
-        <img src="https://img.shields.io/badge/DE-Hyprland-00dbd2?style=for-the-badge&logo=rainmeter&logoColor=00dbd2"width=100%>
         <img src="https://img.shields.io/badge/Learning-Rust-fab387?style=for-the-badge&logo=rust&logoColor=fab387"width=100%>
       </td>
     </tr>
