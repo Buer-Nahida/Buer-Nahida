@@ -4,7 +4,6 @@
 	</a>
     <br/>
     <br/>
-
     <img src="https://img.shields.io/badge/I like-Coding-f38ba8?style=for-the-badge&logo=southwestairlines&logoColor=f38ba8">
     <a href="https://www.rust-lang.org">
         <img src="https://img.shields.io/badge/Code-Rust-fab387?style=for-the-badge&logo=rust&logoColor=fab387">
