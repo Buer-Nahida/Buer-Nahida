@@ -1,7 +1,11 @@
 <div align="center">
-    <a href="https://github.com/SR-MyStar"><img src="https://img.shields.io/badge/Hey, I'm -纳西妲 · Nahida-7EDA6D?style=for-the-badge&logo=starship&logoColor=7EDA6D" width=100%></a>
+    <a href="https://github.com/SR-MyStar">
+	    <img src="https://img.shields.io/badge/Hey, I'm -纳西妲 · Nahida-7EDA6D?style=for-the-badge&logo=starship&logoColor=7EDA6D" width=100%>
+	</a>
+
     <br/>
     <br/>
+
     <img src="https://img.shields.io/badge/I like-Coding-f38ba8?style=for-the-badge&logo=southwestairlines&logoColor=f38ba8">
     <a href="https://www.rust-lang.org">
         <img src="https://img.shields.io/badge/Code-Rust-fab387?style=for-the-badge&logo=rust&logoColor=fab387">
