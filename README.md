@@ -38,7 +38,7 @@
             <td>
                 <a href="https://github.com/SR-MyStar/MyNeovimDots">
                     <img src="https://github-readme-stats.vercel.app/api/pin/?username=SR-MyStar&repo=MyNeovimDots&theme=catppuccin_mocha" width=100%>
-                    <img src="https://github.com/SR-MyStar/MyNeovimDots/assets/139795416/4cc0a02c-9d84-47ee-a3d0-d320c3a4db53" width=100%>
+                    <img src="https://github.com/SR-MyStar/SR-MyStar/assets/139795416/d0e5b309-4c04-4b1c-9cd7-d5403dc5e2e9" width=100%>
                 </a>
             </td>
         </tr>
