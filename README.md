@@ -2,7 +2,6 @@
     <a href="https://github.com/SR-MyStar">
 	    <img src="https://img.shields.io/badge/Hey, I'm -纳西妲 · Nahida-7EDA6D?style=for-the-badge&logo=starship&logoColor=7EDA6D" width=100%>
 	</a>
-
     <br/>
     <br/>
 

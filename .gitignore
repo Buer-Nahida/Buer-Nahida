@@ -1,5 +1,7 @@
-/bin/*
-/build/*
+/bin/**
+/build/**
 a.out
 target
-target/*
+target/**
+/.obsidian
+/.obsidian/**
