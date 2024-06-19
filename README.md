@@ -20,9 +20,9 @@
                 <a href="https://www.bilibili.com">
                     <img src="https://img.shields.io/badge/BiliBili-Lovely_猫喵-f38ba8?style=for-the-badge&logo=bilibili&logoColor=f38ba8" width=100%>
                 </a>
-                <a href="https://github.com/SR-MyStar">
-                    <img src="https://github-readme-stats.vercel.app/api?username=SR-MyStar&show_icons=true&theme=catppuccin_mocha&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" border=0 width=100%>
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SR-MyStar&layout=donut&theme=catppuccin_mocha&exclude_repo=SR-MyStar.github.io&langs_count=10" border=0 width=100%>
+                <a href="https://github.com/0b10000000011">
+                    <img src="https://github-readme-stats.vercel.app/api?username=0b10000000011&show_icons=true&theme=catppuccin_mocha&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" border=0 width=100%>
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=0b10000000011&layout=donut&theme=catppuccin_mocha&exclude_repo=SR-MyStar.github.io&langs_count=10" border=0 width=100%>
                 </a>
             </td>
         </tr>
@@ -30,15 +30,15 @@
     <table>
         <tr>
             <td>
-                <a href="https://github.com/SR-MyStar/Hyprdots">
-                  <img src="https://github-readme-stats.vercel.app/api/pin/?username=SR-MyStar&repo=Hyprdots&theme=catppuccin_mocha" width=100%>
-                  <img src="https://github.com/SR-MyStar/SR-MyStar/assets/139795416/6b9adae6-a588-4e24-ad4f-15f920f99581" width=100%>
+                <a href="https://github.com/0b10000000011/Hyprdots">
+                  <img src="https://github-readme-stats.vercel.app/api/pin/?username=0b10000000011&repo=Hyprdots&theme=catppuccin_mocha" width=100%>
+                  <img src="https://github.com/0b10000000011/0b10000000011/assets/139795416/6b9adae6-a588-4e24-ad4f-15f920f99581" width=100%>
                 </a>
             </td>
             <td>
-                <a href="https://github.com/SR-MyStar/MyNeovimDots">
-                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SR-MyStar&repo=MyNeovimDots&theme=catppuccin_mocha" width=100%>
-                    <img src="https://github.com/SR-MyStar/SR-MyStar/assets/139795416/d0e5b309-4c04-4b1c-9cd7-d5403dc5e2e9" width=100%>
+                <a href="https://github.com/0b10000000011/YammyNvim">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=0b10000000011&repo=YammyNvim&theme=catppuccin_mocha" width=100%>
+                    <img src="https://github.com/0b10000000011/0b10000000011/assets/139795416/d0e5b309-4c04-4b1c-9cd7-d5403dc5e2e9" width=100%>
                 </a>
             </td>
         </tr>
