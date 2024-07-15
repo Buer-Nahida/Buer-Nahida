@@ -14,15 +14,15 @@
     <table>
         <tr>
             <td>
-                <img src="https://github.com/0xNahida/0xNahida/assets/139795416/19a89942-ed36-435f-a79e-0f6a6e377b0f" width=100%>
+                <img src="https://github.com/Buer-Nahida/Buer-Nahida/assets/139795416/19a89942-ed36-435f-a79e-0f6a6e377b0f" width=100%>
             </td>
             <td>
                 <a href="https://www.bilibili.com">
                     <img src="https://img.shields.io/badge/BiliBili-Lovely_猫喵-f38ba8?style=for-the-badge&logo=bilibili&logoColor=f38ba8" width=100%>
                 </a>
-                <a href="https://github.com/0xNahida">
-                    <img src="https://github-readme-stats.vercel.app/api?username=0xNahida&show_icons=true&theme=catppuccin_mocha&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" border=0 width=100%>
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=0xNahida&layout=donut&theme=catppuccin_mocha&exclude_repo=SR-MyStar.github.io&langs_count=10" border=0 width=100%>
+                <a href="https://github.com/Buer-Nahida">
+                    <img src="https://github-readme-stats.vercel.app/api?username=Buer-Nahida&show_icons=true&theme=catppuccin_mocha&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" border=0 width=100%>
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Buer-Nahida&layout=donut&theme=catppuccin_mocha&exclude_repo=SR-MyStar.github.io&langs_count=10" border=0 width=100%>
                 </a>
             </td>
         </tr>
@@ -30,15 +30,15 @@
     <table>
         <tr>
             <td>
-                <a href="https://github.com/0xNahida/Hyprdots">
+                <a href="https://github.com/Buer-Nahida/Hyprdots">
                   <img src="https://github-readme-stats.vercel.app/api/pin/?username=0xNahida&repo=Hyprdots&theme=catppuccin_mocha" width=100%>
-                  <img src="https://github.com/0xNahida/0xNahida/assets/139795416/6b9adae6-a588-4e24-ad4f-15f920f99581" width=100%>
+                  <img src="https://github.com/Buer-Nahida/Buer-Nahida/assets/139795416/6b9adae6-a588-4e24-ad4f-15f920f99581" width=100%>
                 </a>
             </td>
             <td>
-                <a href="https://github.com/0xNahida/YammyNvim">
+                <a href="https://github.com/Buer-Nahida/YammyNvim">
                     <img src="https://github-readme-stats.vercel.app/api/pin/?username=0xNahida&repo=YammyNvim&theme=catppuccin_mocha" width=100%>
-                    <img src="https://github.com/0xNahida/0xNahida/assets/139795416/d0e5b309-4c04-4b1c-9cd7-d5403dc5e2e9" width=100%>
+                    <img src="https://github.com/Buer-Nahida/Buer-Nahida/assets/139795416/d0e5b309-4c04-4b1c-9cd7-d5403dc5e2e9" width=100%>
                 </a>
             </td>
         </tr>
