@@ -27,7 +27,7 @@
             </td>
         </tr>
     </table>
-    <table>
+    <!--<table>
         <tr>
             <td>
                 <a href="https://github.com/Buer-Nahida/Hyprdots">
@@ -35,12 +35,6 @@
                   <img src="https://github.com/Buer-Nahida/Buer-Nahida/assets/139795416/6b9adae6-a588-4e24-ad4f-15f920f99581" width=100%>
                 </a>
             </td>
-            <td>
-                <a href="https://github.com/Buer-Nahida/YammyNvim">
-                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Buer-Nahida&repo=YammyNvim&theme=catppuccin_mocha" width=100%>
-                    <img src="https://github.com/Buer-Nahida/Buer-Nahida/assets/139795416/d0e5b309-4c04-4b1c-9cd7-d5403dc5e2e9" width=100%>
-                </a>
-            </td>
         </tr>
-    </table>
+    </table>-->
 </div>
