@@ -9,7 +9,7 @@
         <img src="https://img.shields.io/badge/Code-Rust-fab387?style=for-the-badge&logo=rust&logoColor=fab387">
     </a>
     <a href="https://www.archlinux.org">
-        <img src="https://img.shields.io/badge/I'm using-ArchLinux-74c7ec?style=for-the-badge&logo=archlinux&logoColor=74c7ec">
+        <img src="https://img.shields.io/badge/I'm using-NixOS-74c7ec?style=for-the-badge&logo=nixos&logoColor=7EB8E2">
     </a>
     <table>
         <tr>
